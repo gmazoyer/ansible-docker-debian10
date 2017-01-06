@@ -1,5 +1,7 @@
 # Debian 9 (Stretch) Ansible Test Image
 
+[![Docker Automated build](https://img.shields.io/docker/automated/gmazoyer/ansible-docker-debian9.svg?maxAge=2592000)](https://hub.docker.com/r/gmazoyer/ansible-docker-debian9/)
+
 Debian 9 (Stretch) Docker container for Ansible role testing.
 
 ## Building
