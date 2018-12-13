@@ -8,7 +8,7 @@ ENV DEBIAN_FRONTEND noninteractive
 
 # Install requirements
 RUN apt-get update && \
-    apt-get install -y build-essential libffi-dev libssl-dev python-pip python-dev sudo systemd \
+    apt-get install -y build-essential libffi-dev libssl-dev python-pip python-dev sudo systemd && \
     apt-get clean
 
 # Install Ansible
