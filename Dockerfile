@@ -1,12 +1,15 @@
 FROM debian:stretch
-MAINTAINER Guillaume Mazoyer
+
+LABEL version="1.0"
+LABEL maintainer="Guillaume Mazoyer"
+LABEL description="Debian 9 container for Ansible role testing"
 
 ENV DEBIAN_FRONTEND noninteractive
 
 # Install requirements
-RUN apt-get update
-RUN apt-get install -y build-essential libffi-dev libssl-dev python-pip python-dev systemd
-RUN apt-get clean
+RUN apt-get update && \
+    apt-get install -y build-essential libffi-dev libssl-dev python-pip python-dev sudo systemd \
+    apt-get clean
 
 # Install Ansible
 RUN pip install cryptography ansible
