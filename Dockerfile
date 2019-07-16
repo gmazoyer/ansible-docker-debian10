@@ -1,8 +1,8 @@
-FROM debian:stretch
+FROM debian:buster
 
 LABEL version="1.0"
 LABEL maintainer="Guillaume Mazoyer"
-LABEL description="Debian 9 container for Ansible role testing"
+LABEL description="Debian 10 container for Ansible role testing"
 
 ENV DEBIAN_FRONTEND noninteractive
 

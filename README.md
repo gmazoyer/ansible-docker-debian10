@@ -1,9 +1,9 @@
-# Debian 9 (Stretch) Ansible Test Image
+# Debian 10 (Buster) Ansible Test Image
 
-[![Docker Automated build](https://img.shields.io/docker/automated/gmazoyer/ansible-docker-debian9.svg?maxAge=2592000)](https://hub.docker.com/r/gmazoyer/ansible-docker-debian9/)
-[![](https://images.microbadger.com/badges/image/gmazoyer/ansible-docker-debian9.svg)](https://microbadger.com/images/gmazoyer/ansible-docker-debian9 "Get your own image badge on microbadger.com")
+[![Docker Automated build](https://img.shields.io/docker/automated/gmazoyer/ansible-docker-debian10.svg?maxAge=2592000)](https://hub.docker.com/r/gmazoyer/ansible-docker-debian10/)
+[![](https://images.microbadger.com/badges/image/gmazoyer/ansible-docker-debian10.svg)](https://microbadger.com/images/gmazoyer/ansible-docker-debian10 "Get your own image badge on microbadger.com")
 
-Debian 9 (Stretch) Docker container for Ansible role testing.
+Debian 10 (Buster) Docker container for Ansible role testing.
 
 ## Building
 
@@ -12,4 +12,4 @@ is rebuilt, and any time a commit is pushed to the `master` branch.
 
 ## Author
 
-Created in 2017 by [Guillaume Mazoyer](https://respawner.fr).
+Created in 2019 by [Guillaume Mazoyer](https://respawner.fr).
