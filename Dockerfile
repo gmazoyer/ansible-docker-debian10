@@ -1,6 +1,6 @@
 FROM debian:buster
 
-LABEL version="2.0"
+LABEL version="2.1"
 LABEL maintainer="Guillaume Mazoyer"
 LABEL description="Debian 10 container for Ansible role testing"
 
@@ -9,12 +9,16 @@ ENV DEBIAN_FRONTEND noninteractive
 # Install requirements
 RUN apt-get update \
     && apt-get install -y --no-install-recommends \
-               build-essential libffi-dev libssl-dev \
+               build-essential libffi-dev libssl-dev locales locales-all \
                python3-pip python3-dev python3-setuptools python3-wheel \
                sudo systemd \
     && rm -rf /var/lib/apt/lists/* \
     && rm -rf /usr/share/doc && rm -rf /usr/share/man \
     && apt-get clean
+
+ENV LC_ALL en_US.UTF-8
+ENV LANG en_US.UTF-8
+ENV LANGUAGE en_US.UTF-8
 
 # Install Ansible
 RUN pip3 install cryptography ansible
