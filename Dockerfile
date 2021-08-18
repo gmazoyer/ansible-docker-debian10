@@ -15,7 +15,7 @@ RUN apt-get update \
     && rm -rf /var/lib/apt/lists/* \
     && rm -rf /usr/share/doc && rm -rf /usr/share/man \
     && apt-get clean \
-    && echo 'Europe/Paris' > /etc/timezone
+    && echo 'Europe/Paris' > /etc/timezone \
     && pip3 install -U pip
 
 ENV LC_ALL en_US.UTF-8
